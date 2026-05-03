@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Über mich — Marius Bracke | cosmoworks.studio</title>
+  <meta name="description" content="Marius Bracke: Berater für Vertrieb, Markenpositionierung und Geschäftsentwicklung. Zehn Jahre Eventformate, sechs Jahre B2B-Vertrieb, Bachelorarbeit zu identitätsorientierter Markenführung. Berlin." />
+  <meta name="author" content="Marius Bracke" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#fbfaf6" />
+  <link rel="canonical" href="https://cosmoworks.studio/ueber-mich.html" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:url" content="https://cosmoworks.studio/ueber-mich.html" />
+  <meta property="og:title" content="Marius Bracke — Über mich" />
+  <meta property="og:description" content="Wie aus zehn Jahren Bühne und sechs Jahren B2B-Vertrieb ein eigener Blick auf Founder-Wachstum wurde." />
+  <meta property="og:image" content="https://cosmoworks.studio/img/Marius%20Portraits/Marius%20Portrait%20color.jpg" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900,400i,500i,700i&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --c-paper:      #fbfaf6;
+      --c-paper-dark: #f3f0e8;
+      --c-ink:        #1a1814;
+      --c-ink-50:     rgba(26,24,20,0.50);
+      --c-ink-65:     rgba(26,24,20,0.65);
+      --c-ink-80:     rgba(26,24,20,0.80);
+      --c-rule:       rgba(26,24,20,0.16);
+      --c-sage:       #7d8a7a;
+      --c-sage-dk:    #5e6a5b;
+      --f-sans:       'Switzer', -apple-system, BlinkMacSystemFont, sans-serif;
+      --t-display:    clamp(2.8rem, 6.5vw, 5rem);
+      --t-head-l:     clamp(2.4rem, 5.5vw, 4.25rem);
+      --t-head-s:     clamp(1.3rem, 2vw, 1.7rem);
+      --t-body-l:     clamp(1.15rem, 1.7vw, 1.4rem);
+      --t-body:       clamp(0.95rem, 1.2vw, 1.1rem);
+      --t-caption:    0.7rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--c-paper);
+      background-image:
+        radial-gradient(ellipse 65% 50% at 10% 15%, rgba(125,138,122,0.38), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 90% 85%, rgba(168,152,136,0.34), transparent 60%),
+        radial-gradient(ellipse 80% 60% at 55% 50%, rgba(220,196,156,0.42), transparent 65%);
+      background-attachment: fixed;
+      color: var(--c-ink);
+      font-family: var(--f-sans);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.04;
+      mix-blend-mode: multiply;
+    }
+
+    /* ============================================================
+       Header (gleich wie Cases)
+       ============================================================ */
+    .header {
+      position: relative;
+      z-index: 2;
+      padding: 1.5rem clamp(1.25rem, 4vw, 3rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px solid var(--c-rule);
+    }
+    .brand {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: -0.015em;
+      color: var(--c-ink);
+      text-decoration: none;
+    }
+    .brand::before {
+      content: '◐';
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: var(--c-sage);
+      transform: translateY(-1px);
+      font-size: 0.85em;
+    }
+    .header__nav { display: flex; gap: 1.5rem; align-items: center; }
+    .header__nav a {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: 0.825rem;
+      color: var(--c-ink-65);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .header__nav a:hover { color: var(--c-ink); }
+
+    /* ============================================================
+       Main
+       ============================================================ */
+    main {
+      position: relative;
+      z-index: 2;
+      max-width: 88rem;
+      margin: 0 auto;
+      padding: clamp(4rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3rem) clamp(5rem, 10vw, 8rem);
+    }
+
+    /* ============================================================
+       Bio-Layout — Body links, Sticky-Aside rechts (Case Study Pattern)
+       ============================================================ */
+    .bio__layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2rem, 4vw, 3.5rem);
+      grid-template-areas:
+        "aside"
+        "body";
+    }
+    @media (min-width: 1024px) {
+      .bio__layout {
+        grid-template-columns: 6fr 4fr;
+        grid-template-areas: "body aside";
+        align-items: start;
+      }
+    }
+    .bio__body { grid-area: body; min-width: 0; }
+    .bio__sticky {
+      grid-area: aside;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      max-width: 26rem;
+    }
+    @media (min-width: 1024px) {
+      .bio__sticky {
+        position: sticky;
+        top: 2rem;
+        justify-self: end;
+      }
+    }
+
+    .kicker {
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-ink-65);
+    }
+    .kicker__num {
+      font-family: var(--f-sans);
+      font-weight: 700;
+      color: var(--c-sage);
+      letter-spacing: 0.05em;
+    }
+    h1 {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      color: var(--c-ink);
+      max-width: 14ch;
+    }
+    h1 strong { font-weight: 800; color: var(--c-sage-dk); }
+    .bio__sub {
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: clamp(0.85rem, 1.05vw, 0.95rem);
+      line-height: 1.5;
+      color: var(--c-ink-65);
+      letter-spacing: -0.005em;
+    }
+    .bio__photo {
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      background: var(--c-paper-dark);
+    }
+    .bio__photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+      display: block;
+    }
+    .bio__photo figcaption {
+      margin-top: 0.85rem;
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+    }
+
+    /* Intro-Block oben im Body */
+    .bio__intro {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.25rem, 2.5vw, 1.75rem);
+    }
+    .bio__intro .body { gap: 1.25rem; }
+
+    /* Erste Section innerhalb des Body hat keinen Trenner oben */
+    .bio__body > .section:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    /* ============================================================
+       Section pattern
+       ============================================================ */
+    .section {
+      position: relative;
+      margin-top: clamp(2rem, 4vw, 3.25rem);
+      padding-top: clamp(1.75rem, 3vw, 2.5rem);
+      border-top: 1px solid var(--c-rule);
+    }
+    .section__head {
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-ink-65);
+      margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+    }
+    .section__head .num {
+      font-family: var(--f-sans);
+      font-weight: 700;
+      color: var(--c-sage);
+      letter-spacing: 0.05em;
+    }
+    .section h2 {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-head-l);
+      line-height: 1;
+      letter-spacing: -0.035em;
+      color: var(--c-ink);
+      max-width: 22ch;
+      margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+    }
+    .section h2 strong { font-weight: 800; color: var(--c-sage-dk); }
+
+    .body {
+      max-width: 50rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .body p {
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: var(--t-body-l);
+      line-height: 1.55;
+      color: var(--c-ink-80);
+      letter-spacing: -0.005em;
+    }
+    .body p strong { font-weight: 600; color: var(--c-ink); }
+    .body h3 {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-head-s);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+      margin-top: clamp(1rem, 2vw, 1.75rem);
+    }
+    .body > h3:first-child { margin-top: 0; }
+
+    /* ============================================================
+       CTA
+       ============================================================ */
+    .cta-end {
+      margin-top: clamp(4rem, 8vw, 6rem);
+      padding: clamp(2rem, 4vw, 2.75rem);
+      background: var(--c-paper-dark);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+    .cta-end h2 {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: clamp(1.4rem, 2.4vw, 1.875rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+      max-width: 32ch;
+    }
+    .cta-end p {
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: var(--t-body);
+      line-height: 1.55;
+      color: var(--c-ink-65);
+      max-width: 42rem;
+    }
+    .cta-end .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--c-ink);
+      color: var(--c-paper);
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.35rem;
+      text-decoration: none;
+      transition: gap 0.25s ease, background-color 0.25s ease;
+      margin-top: 0.5rem;
+    }
+    .cta-end .btn:hover { background: var(--c-sage-dk); gap: 0.85rem; }
+
+    /* ============================================================
+       Footer (gleich wie Cases)
+       ============================================================ */
+    .footer {
+      position: relative;
+      z-index: 2;
+      background: var(--c-ink);
+      color: rgba(251,250,246,0.50);
+      padding: 2.25rem clamp(1.25rem, 4vw, 3rem);
+      font-family: var(--f-sans);
+      font-size: 0.825rem;
+    }
+    .footer__inner {
+      max-width: 88rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    @media (min-width: 640px) {
+      .footer__inner { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    .footer a { color: rgba(251,250,246,0.50); text-decoration: none; }
+    .footer a:hover { color: rgba(251,250,246,1); }
+    .footer__sep { color: rgba(251,250,246,0.25); margin: 0 0.5rem; }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="index.html" class="brand">cosmoworks.studio</a>
+    <nav class="header__nav">
+      <a href="cases.html">Cases</a>
+      <a href="index.html">← Startseite</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="bio__layout">
+
+      <!-- BODY (links): Intro + alle Sections -->
+      <div class="bio__body">
+
+        <!-- INTRO -->
+        <section class="bio__intro">
+          <p class="kicker">
+            <span class="kicker__num">·</span>
+            <span>Über mich</span>
+          </p>
+          <h1>Wer ich bin.</h1>
+          <div class="body">
+            <p>
+              Lässt sich nicht in einem Job-Titel sagen.
+              Wirtschaftswissenschaftler, der Konzerte gebaut hat. Vertriebler,
+              der über Markenpsychologie nachdenkt. Unternehmensberater, der
+              lieber selbst macht. Die Kombination ist die Geschichte.
+            </p>
+            <p>
+              Was klingt wie viele Welten, ist im Kern dasselbe Handwerk:
+              Strukturen bauen, Vertrauen aufbauen, Menschen zusammenbringen.
+            </p>
+          </div>
+        </section>
+
+
+    <!-- 01 — Wo ich herkomme -->
+    <section class="section">
+      <div class="section__head">
+        <span class="num">01</span>
+        <span>Wo ich herkomme</span>
+      </div>
+      <h2>Zwei Welten, dieselbe <strong>Mechanik</strong>.</h2>
+
+      <div class="body">
+
+        <h3>Kultur und Bühne</h3>
+        <p>
+          Über zehn Jahre habe ich Eventformate aufgebaut. Music Sneak in
+          Frankfurt, Sofar Sounds Frankfurt, Cosmo Social Club in Berlin.
+          Jedes Format aus dem Nichts, ohne Künstlernamen, der zieht, und
+          ohne Raum, den die Stadt schon kennt.
+        </p>
+        <p>
+          Was ich daraus mitgenommen habe: wie man aus dem Nichts Vertrauen
+          baut. Wie man Menschen zusammenbringt, die sich sonst nie
+          getroffen hätten. Wie eine Marke entsteht, nicht durch Budget, sondern durch Wiederholung
+          und Konsistenz.
+        </p>
+
+        <h3>B2B-Vertrieb</h3>
+        <p>
+          Parallel kam der Vertrieb. Sechs Jahre, in Software, IT, Real
+          Estate und Kultur. twotickets, talque, UpVisit. Heute begleite
+          ich Founder operativ, zusätzlich im Aufbau von EVER Health oder in
+          der Strukturierung des Vertriebs und Marketings der Firma
+          Real Life Interaction und der Marke talque.
+        </p>
+        <p>
+          Was ich daraus mitgenommen habe: wie Vertriebssysteme aussehen,
+          die nicht nur eine Quartalskampagne überleben. Warum die meisten
+          Sales-Probleme keine Sales-Probleme sind, sondern
+          Wahrnehmungsprobleme. Warum Founder oft nicht wissen, wie ihr
+          Markt sie sieht. Und warum diese Lücke das eigentliche
+          Wachstumshindernis ist.
+        </p>
+
+        <h3>Die Verbindung</h3>
+        <p>
+          Klingt nach zwei Welten. Ist es nicht.
+        </p>
+        <p>
+          Beides ist Aufbau aus dem Nichts. Beides hat dieselben
+          Mechaniken: Vertrauen, Timing, Wahrnehmung. Beides scheitert
+          nicht an der Idee, sondern an der Mechanik dahinter.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- 02 — Wie ich denke -->
+    <section class="section">
+      <div class="section__head">
+        <span class="num">02</span>
+        <span>Wie ich denke</span>
+      </div>
+      <h2>Wahrnehmung folgt <strong>Regeln</strong>.</h2>
+
+      <div class="body">
+        <p>
+          2016 habe ich an der Goethe-Universität meine Bachelorarbeit
+          geschrieben, über identitätsorientierte Markenführung und
+          Processing Fluency in der Karriereentwicklung von Musikern.
+          Klingt akademisch, ist es auch. Aber das, was ich damals
+          theoretisch durchgearbeitet habe, ist heute mein praktisches
+          Werkzeug.
+        </p>
+        <p>
+          Identität ist, wer eine Marke oder ein Founder wirklich ist.
+          Image ist, wie der Markt sie sieht. Beide stehen selten exakt
+          übereinander. Meine Arbeit ist es, diese Lücke zu erkennen und
+          zu schließen, bevor sie zum Engpass wird.
+        </p>
+        <p>
+          Wahrnehmung folgt Regeln. Wer sie kennt, baut bessere Pitches,
+          klarere Positionierungen, tragfähigere Marken. Vertrieb ist
+          nicht in erster Linie Technik oder Skript. Er ist Wahrnehmung
+          in Bewegung. Genau dort setze ich an.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- 03 — Wo ich lebe, was mich antreibt -->
+    <section class="section">
+      <div class="section__head">
+        <span class="num">03</span>
+        <span>Wo ich lebe, was mich antreibt</span>
+      </div>
+      <h2>Aufbauen, nicht <strong>beraten</strong>.</h2>
+
+      <div class="body">
+        <p>
+          Ich lebe in Berlin. Aufgewachsen bin ich im Odenwald, studiert
+          in Frankfurt, die Verbindung dorthin ist geblieben.
+        </p>
+        <p>
+          Was mich antreibt: aufbauen, nicht beraten. Verantwortung
+          übernehmen, nicht empfehlen. Ich habe nie verstanden, wie man
+          einen Plan abgibt und geht, bevor das erste Mal etwas getan
+          wurde. Mein Platz ist neben den Founders, nicht gegenüber.
+        </p>
+      </div>
+    </section>
+
+      </div><!-- /bio__body -->
+
+      <!-- STICKY ASIDE (rechts): Foto + Tagline (H1 wandert in Body-Intro) -->
+      <aside class="bio__sticky">
+        <figure class="bio__photo">
+          <img src="img/Marius%20Portraits/Marius%20Portrait.webp"
+               alt="Portrait von Marius Bracke"
+               loading="eager" />
+        </figure>
+        <p class="bio__sub">
+          Marius Bracke baut Strukturen: für Marken, für Vertrieb, für Räume,
+          in denen Menschen zusammenkommen. Studierter Wirtschaftswissenschaftler,
+          sechs Jahre B2B-Vertrieb, zehn Jahre Bühne. Lebt zwischen Berlin,
+          Odenwald und Montefiore dell&rsquo;Aso.
+        </p>
+      </aside>
+
+    </div><!-- /bio__layout -->
+
+
+    <!-- CTA -->
+    <div class="cta-end">
+      <h2>Lass uns reden.</h2>
+      <p>
+        Wenn etwas hängt, finde ich den Engpass und löse ihn. 30 Minuten
+        reichen meist, um zu sehen, wo es wirklich hängt.
+      </p>
+      <a href="index.html#kontakt" class="btn">
+        <span>Erstgespräch buchen</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 cosmoworks.studio · Marius Bracke · Berlin</p>
+      <p>
+        <a href="impressum.html">Impressum</a>
+        <span class="footer__sep">·</span>
+        <a href="datenschutz.html">Datenschutz</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

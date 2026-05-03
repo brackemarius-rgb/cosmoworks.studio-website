@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cases — cosmoworks.studio · Marius Bracke</title>
+  <meta name="description" content="Cases von Marius Bracke / cosmoworks.studio — Engpass-Sparring und Markenaufbau für Founders in Berlin und Frankfurt." />
+  <meta name="author" content="Marius Bracke" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#fbfaf6" />
+  <link rel="canonical" href="https://cosmoworks.studio/cases.html" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:url" content="https://cosmoworks.studio/cases.html" />
+  <meta property="og:title" content="Cases — Marius Bracke / cosmoworks.studio" />
+  <meta property="og:description" content="Engpass-Sparring und Markenaufbau für Founders. Eine Auswahl der Projekte von Marius Bracke." />
+  <meta property="og:image" content="https://cosmoworks.studio/img/Marius%20Portraits/Marius%20Portrait%20color.jpg" />
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --c-paper:      #fbfaf6;
+      --c-paper-dark: #f3f0e8;
+      --c-ink:        #1a1814;
+      --c-ink-50:     rgba(26,24,20,0.50);
+      --c-ink-65:     rgba(26,24,20,0.65);
+      --c-ink-80:     rgba(26,24,20,0.80);
+      --c-rule:       rgba(26,24,20,0.16);
+      --c-sage:       #7d8a7a;
+      --c-sage-dk:    #5e6a5b;
+      --f-sans:       'Switzer', -apple-system, BlinkMacSystemFont, sans-serif;
+      --t-display:    clamp(3rem, 9vw, 7rem);
+      --t-head-l:     clamp(2.4rem, 5.5vw, 4.25rem);
+      --t-body-l:     clamp(1.15rem, 1.7vw, 1.4rem);
+      --t-body:       clamp(0.95rem, 1.2vw, 1.1rem);
+      --t-caption:    0.7rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+    body {
+      background-color: var(--c-paper);
+      background-image:
+        radial-gradient(ellipse 65% 50% at 10% 15%, rgba(125,138,122,0.38), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 90% 85%, rgba(168,152,136,0.34), transparent 60%),
+        radial-gradient(ellipse 80% 60% at 55% 50%, rgba(220,196,156,0.42), transparent 65%);
+      background-attachment: fixed;
+      color: var(--c-ink);
+      font-family: var(--f-sans);
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.04;
+      mix-blend-mode: multiply;
+    }
+
+    .header {
+      position: relative;
+      z-index: 2;
+      padding: 1.5rem clamp(1.25rem, 4vw, 3rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--c-rule);
+    }
+    .brand {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: -0.015em;
+      color: var(--c-ink);
+      text-decoration: none;
+    }
+    .brand::before {
+      content: '◐';
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: var(--c-sage);
+      transform: translateY(-1px);
+      font-size: 0.85em;
+    }
+    .back-link {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: 0.825rem;
+      color: var(--c-ink-65);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .back-link:hover { color: var(--c-ink); }
+
+    main {
+      position: relative;
+      z-index: 2;
+      max-width: 88rem;
+      margin: 0 auto;
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.25rem, 4vw, 3rem) clamp(5rem, 10vw, 8rem);
+    }
+
+    .kicker {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-sage);
+    }
+    h1 {
+      margin-top: 1.25rem;
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-head-l);
+      line-height: 1;
+      letter-spacing: -0.035em;
+      color: var(--c-ink);
+      max-width: 22ch;
+    }
+    h1 strong { font-weight: 800; color: var(--c-sage-dk); }
+    .intro {
+      margin-top: 1.5rem;
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: var(--t-body-l);
+      line-height: 1.55;
+      color: var(--c-ink-65);
+      max-width: 38rem;
+    }
+
+    .cases-grid {
+      margin-top: clamp(3rem, 6vw, 5rem);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 768px) { .cases-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .case-card {
+      background: var(--c-paper-dark);
+      padding: clamp(2rem, 3.5vw, 3rem);
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+      text-decoration: none;
+      color: var(--c-ink);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      min-height: 26rem;
+    }
+    a.case-card:hover {
+      background: #e8e2d4;
+      transform: translateY(-2px);
+    }
+    .case-card--coming { opacity: 0.65; cursor: default; }
+
+    .case-card__logo {
+      height: 2.5rem;
+      width: auto;
+      max-width: 11rem;
+      object-fit: contain;
+      object-position: left center;
+      align-self: flex-start;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
+    }
+    .case-card__logo--text {
+      font-family: var(--f-sans);
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: -0.04em;
+      color: var(--c-ink);
+      align-self: flex-start;
+      margin-bottom: 0.5rem;
+    }
+    .case-card__client {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+    }
+    .case-card__title {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: clamp(1.5rem, 2.4vw, 1.875rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+    }
+    .case-card__summary {
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: var(--t-body);
+      line-height: 1.6;
+      color: var(--c-ink-65);
+      flex-grow: 1;
+    }
+    .case-card__cta {
+      margin-top: auto;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--c-rule);
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-ink-65);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: color 0.25s ease, gap 0.25s ease;
+    }
+    a.case-card:hover .case-card__cta { color: var(--c-ink); gap: 1.4rem; }
+
+    .footer {
+      position: relative;
+      z-index: 2;
+      background: var(--c-ink);
+      color: rgba(251,250,246,0.50);
+      padding: 2.25rem clamp(1.25rem, 4vw, 3rem);
+      font-family: var(--f-sans);
+      font-size: 0.825rem;
+    }
+    .footer__inner {
+      max-width: 88rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    @media (min-width: 640px) {
+      .footer__inner { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    .footer a { color: rgba(251,250,246,0.50); text-decoration: none; }
+    .footer a:hover { color: rgba(251,250,246,1); }
+    .footer__sep { color: rgba(251,250,246,0.25); margin: 0 0.5rem; }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="index.html" class="brand">cosmoworks.studio</a>
+    <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+  </header>
+
+  <main>
+    <p class="kicker">Cases</p>
+    <h1>Marken, die ich aufgebaut, <strong>Engpässe</strong>, die ich gelöst habe.</h1>
+    <p class="intro">
+      Eine Auswahl der Projekte aus Vertrieb, Marke und Eventbranche. Manche laufen
+      seit Jahren. Andere haben in Wochen den Engpass aufgelöst.
+    </p>
+
+    <div class="cases-grid">
+
+      <a href="cases/musiksneak.html" class="case-card">
+        <img class="case-card__logo" src="img/Logos/JH_logo_GOLD.webp" alt="Jahrhunderthalle Frankfurt" loading="lazy" />
+        <p class="case-card__client">Jahrhunderthalle Frankfurt · seit 2017</p>
+        <h2 class="case-card__title">Musiksneak Frankfurt — aus einem vergessenen Raum eine feste Marke.</h2>
+        <p class="case-card__summary">
+          Reaktivierung der historischen 60er-Jahre-Bar in der Jahrhunderthalle Frankfurt.
+          Drei Bühnen, drei unbekannte Acts pro Abend, kein Line-up im Vorfeld — Vertrauen
+          ins Booking als Format-DNA. Heute, fast acht Jahre später, eine feste Konzertgröße
+          in Frankfurt.
+        </p>
+        <span class="case-card__cta">
+          <span>Case lesen</span>
+          <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <a href="cases/sofar-sounds-frankfurt.html" class="case-card">
+        <img class="case-card__logo"
+             src="img/Logos/Sofar_Sounds_logo.png"
+             alt="Sofar Sounds Frankfurt"
+             loading="lazy" />
+        <p class="case-card__client">Sofar Sounds Frankfurt · seit 2015</p>
+        <h2 class="case-card__title">Aus dem Nichts wurde eine Bewegung.</h2>
+        <p class="case-card__summary">
+          2015 das globale Sofar-Sounds-Format nach Frankfurt geholt, drei Jahre
+          aktiv aufgebaut, dann an ein neues Team übergeben. Die Reihe läuft seit
+          zehn Jahren — und hat sogar Corona überlebt. Künstler:innen aus Israel,
+          Mexiko, Brasilien, Italien und England waren bei uns zu Gast.
+        </p>
+        <span class="case-card__cta">
+          <span>Case lesen</span>
+          <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+      <a href="cases/ever-health.html" class="case-card">
+        <img class="case-card__logo" src="img/Logos/logo%20ever%20health.png" alt="EVER Health" loading="lazy" />
+        <p class="case-card__client">EVER Health · seit 2024</p>
+        <h2 class="case-card__title">Erst das Fundament. Dann das Wachstum.</h2>
+        <p class="case-card__summary">
+          HubSpot-CRM, Lead-Strukturen, Monetarisierungslogik und Customer Success für
+          eine B2B-HealthTech-Plattform aufgesetzt — innerhalb weniger Monate.
+          Sauberes Fundament statt Skalierungs-Hacks. Inkl. Founding-Experts-Programm,
+          Newsletter-Setup und ersten Messeauftritten.
+        </p>
+        <span class="case-card__cta">
+          <span>Case lesen</span>
+          <span aria-hidden="true">→</span>
+        </span>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 cosmoworks.studio · Marius Bracke · Berlin</p>
+      <p>
+        <a href="impressum.html">Impressum</a>
+        <span class="footer__sep">·</span>
+        <a href="datenschutz.html">Datenschutz</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

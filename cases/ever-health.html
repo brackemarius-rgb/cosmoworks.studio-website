@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>EVER Health — Case Study | cosmoworks.studio</title>
+  <meta name="description" content="HubSpot-CRM, Lead-Strukturen, Monetarisierungslogik und Customer Success für eine B2B-HealthTech-Plattform aufgesetzt — Fundament für Wachstum statt Skalierungs-Hacks. Case Study von Marius Bracke." />
+  <meta name="author" content="Marius Bracke" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#fbfaf6" />
+  <link rel="canonical" href="https://cosmoworks.studio/cases/ever-health.html" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:url" content="https://cosmoworks.studio/cases/ever-health.html" />
+  <meta property="og:title" content="EVER Health — erst das Fundament, dann das Wachstum" />
+  <meta property="og:description" content="HubSpot-CRM, Lead-Strukturen, Monetarisierungslogik und Customer Success für eine B2B-HealthTech-Plattform — innerhalb weniger Monate. Case Study von Marius Bracke." />
+  <meta property="og:image" content="https://cosmoworks.studio/img/Marius%20Portraits/Marius%20Portrait%20color.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "EVER Health — Case Study",
+    "description": "HubSpot-CRM, Lead-Strukturen, Monetarisierungslogik und Customer Success für eine B2B-HealthTech-Plattform aufgesetzt.",
+    "author": { "@type": "Person", "name": "Marius Bracke", "url": "https://cosmoworks.studio/" },
+    "publisher": { "@type": "Organization", "name": "cosmoworks.studio", "url": "https://cosmoworks.studio/" },
+    "datePublished": "2026-05-02",
+    "about": [
+      { "@type": "Organization", "name": "EVER Health" },
+      { "@type": "Thing", "name": "B2B HealthTech" }
+    ],
+    "keywords": "EVER Health, HealthTech, HubSpot CRM, Vertriebsaufbau, Go-to-Market, Customer Success, B2B SaaS, Engpass-Sparring"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --c-paper:      #fbfaf6;
+      --c-paper-dark: #f3f0e8;
+      --c-ink:        #1a1814;
+      --c-ink-50:     rgba(26,24,20,0.50);
+      --c-ink-65:     rgba(26,24,20,0.65);
+      --c-ink-80:     rgba(26,24,20,0.80);
+      --c-rule:       rgba(26,24,20,0.16);
+      --c-sage:       #7d8a7a;
+      --c-sage-dk:    #5e6a5b;
+      --f-sans:       'Switzer', -apple-system, BlinkMacSystemFont, sans-serif;
+      --t-head-l:     clamp(2.4rem, 5.5vw, 4.25rem);
+      --t-body-l:     clamp(1.15rem, 1.7vw, 1.4rem);
+      --t-body:       clamp(0.95rem, 1.2vw, 1.1rem);
+      --t-caption:    0.7rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--c-paper);
+      background-image:
+        radial-gradient(ellipse 65% 50% at 10% 15%, rgba(125,138,122,0.38), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 90% 85%, rgba(168,152,136,0.34), transparent 60%),
+        radial-gradient(ellipse 80% 60% at 55% 50%, rgba(220,196,156,0.42), transparent 65%);
+      background-attachment: fixed;
+      color: var(--c-ink);
+      font-family: var(--f-sans);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.04;
+      mix-blend-mode: multiply;
+    }
+
+    .header {
+      position: relative;
+      z-index: 2;
+      padding: 1.5rem clamp(1.25rem, 4vw, 3rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px solid var(--c-rule);
+    }
+    .brand {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: -0.015em;
+      color: var(--c-ink);
+      text-decoration: none;
+    }
+    .brand::before {
+      content: '◐';
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: var(--c-sage);
+      transform: translateY(-1px);
+      font-size: 0.85em;
+    }
+    .header__nav { display: flex; gap: 1.5rem; align-items: center; }
+    .header__nav a {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: 0.825rem;
+      color: var(--c-ink-65);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .header__nav a:hover { color: var(--c-ink); }
+
+    main {
+      position: relative;
+      z-index: 2;
+      max-width: 88rem;
+      margin: 0 auto;
+      padding: clamp(4rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3rem) clamp(5rem, 10vw, 8rem);
+    }
+
+    .kicker {
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-ink-65);
+    }
+    .kicker__num {
+      font-family: var(--f-sans);
+      font-weight: 700;
+      color: var(--c-sage);
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      margin-top: 1.25rem;
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-head-l);
+      line-height: 1;
+      letter-spacing: -0.035em;
+      color: var(--c-ink);
+      max-width: 22ch;
+    }
+    h1 strong { font-weight: 800; color: var(--c-sage-dk); }
+
+    .case__client {
+      margin-top: clamp(2.5rem, 5vw, 3.5rem);
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--c-rule);
+      border-bottom: 1px solid var(--c-rule);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      align-items: center;
+    }
+    @media (min-width: 640px) {
+      .case__client { grid-template-columns: auto 1fr 1fr 1fr; gap: 2rem; }
+    }
+    .case__client-logo {
+      max-height: 3rem;
+      width: auto;
+      max-width: 11rem;
+      opacity: 0.85;
+      object-fit: contain;
+    }
+    .case__client-meta { display: flex; flex-direction: column; gap: 0.4rem; }
+    .case__client-meta span {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+    }
+    .case__client-meta strong {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-body);
+      line-height: 1.3;
+      color: var(--c-ink);
+      letter-spacing: -0.005em;
+    }
+
+    .case__layout {
+      margin-top: clamp(2.5rem, 5vw, 3.5rem);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      align-items: start; /* wichtig für sticky in der zweiten Spalte */
+    }
+    @media (min-width: 1024px) {
+      .case__layout { grid-template-columns: 6fr 4fr; }
+    }
+    .case__body {
+      max-width: 44rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .case__body p {
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: var(--t-body-l);
+      line-height: 1.55;
+      color: var(--c-ink-80);
+      letter-spacing: -0.005em;
+    }
+    .case__body p strong { font-weight: 600; color: var(--c-ink); }
+
+    /* Subheadings innerhalb der Case-Erzählung */
+    .case__body h2 {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: clamp(1.4rem, 2vw, 1.85rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+      margin-top: clamp(1rem, 2vw, 1.75rem);
+    }
+    .case__body > h2:first-child { margin-top: 0; }
+
+    /* Eckdaten-Sidebar (sticky auf Desktop) */
+    .case__facts {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.5rem, 2.5vw, 2rem);
+      max-width: 28rem;
+    }
+    @media (min-width: 1024px) {
+      .case__facts {
+        position: sticky;
+        top: 2rem;
+      }
+    }
+    .case__facts-label {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-sage);
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--c-rule);
+    }
+    .case__facts-list {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.25rem, 2vw, 1.75rem);
+      list-style: none;
+      padding: 0;
+    }
+    .case__facts-list li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .case__facts-num {
+      font-family: var(--f-sans);
+      font-weight: 700;
+      font-size: clamp(1.5rem, 2.2vw, 1.85rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+    }
+    .case__facts-meta {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+    }
+
+    /* Testimonial */
+    .testimonial {
+      margin-top: clamp(3rem, 6vw, 4.5rem);
+      padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+      border-top: 1px solid var(--c-rule);
+      border-bottom: 1px solid var(--c-rule);
+    }
+    .testimonial__quote {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+      line-height: 1.35;
+      color: var(--c-ink);
+      letter-spacing: -0.015em;
+      max-width: 56rem;
+    }
+    .testimonial__attribution {
+      margin-top: clamp(1.5rem, 2.5vw, 2rem);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .testimonial__name {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-body);
+      color: var(--c-ink);
+      letter-spacing: -0.005em;
+    }
+    .testimonial__role {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+    }
+
+    .case__footer {
+      margin-top: clamp(3rem, 5vw, 4rem);
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--c-rule);
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .case__footer a {
+      color: var(--c-ink-65);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .case__footer a:hover { color: var(--c-ink); }
+
+    .case__cta-end {
+      margin-top: clamp(3rem, 5vw, 4rem);
+      padding: clamp(2rem, 4vw, 2.75rem);
+      background: var(--c-paper-dark);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+    .case__cta-end h2 {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: clamp(1.4rem, 2.4vw, 1.875rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+      max-width: 32ch;
+    }
+    .case__cta-end p {
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: var(--t-body);
+      line-height: 1.55;
+      color: var(--c-ink-65);
+      max-width: 42rem;
+    }
+    .case__cta-end .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--c-ink);
+      color: var(--c-paper);
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.35rem;
+      text-decoration: none;
+      transition: gap 0.25s ease, background-color 0.25s ease;
+      margin-top: 0.5rem;
+    }
+    .case__cta-end .btn:hover { background: var(--c-sage-dk); gap: 0.85rem; }
+
+    .footer {
+      position: relative;
+      z-index: 2;
+      background: var(--c-ink);
+      color: rgba(251,250,246,0.50);
+      padding: 2.25rem clamp(1.25rem, 4vw, 3rem);
+      font-family: var(--f-sans);
+      font-size: 0.825rem;
+    }
+    .footer__inner {
+      max-width: 88rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    @media (min-width: 640px) {
+      .footer__inner { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    .footer a { color: rgba(251,250,246,0.50); text-decoration: none; }
+    .footer a:hover { color: rgba(251,250,246,1); }
+    .footer__sep { color: rgba(251,250,246,0.25); margin: 0 0.5rem; }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="../index.html" class="brand">cosmoworks.studio</a>
+    <nav class="header__nav">
+      <a href="../cases.html">Cases</a>
+      <a href="../index.html">← Startseite</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="kicker">
+      <span class="kicker__num">Case · 03</span>
+      <span>EVER Health</span>
+    </div>
+
+    <h1>
+      Erst das Fundament.<br />
+      Dann das <strong>Wachstum</strong>.
+    </h1>
+
+    <div class="case__client">
+      <img class="case__client-logo"
+           src="../img/Logos/logo%20ever%20health.png"
+           alt="EVER Health"
+           loading="lazy" />
+      <div class="case__client-meta">
+        <span>Auftraggeber</span>
+        <strong>EVER Health</strong>
+      </div>
+      <div class="case__client-meta">
+        <span>Zeitraum</span>
+        <strong>seit 2024 · laufend</strong>
+      </div>
+      <div class="case__client-meta">
+        <span>Leistung</span>
+        <strong>CRM-Aufbau (HubSpot) · Vertriebsstrukturen · Go-to-Market · Customer Success</strong>
+      </div>
+    </div>
+
+    <div class="case__layout">
+
+      <div class="case__body">
+
+        <p>
+          Im Live-Konzert merkt das Publikum nicht, ob es einen Soundcheck gab.
+          Wenn er fehlt, merkt es jede:r sofort. Bei einer B2B-Software ist das
+          Verhältnis dasselbe. Was Nutzer:innen sehen, ist die Spitze. Was
+          darunter liegt, entscheidet, ob das Produkt skaliert oder erstickt.
+        </p>
+
+        <p>
+          EVER Health war 2024 an einem solchen Punkt. Eine
+          <strong>Praxisplattform für Therapeut:innen</strong>, die
+          Patient:innen-Kommunikation, Therapieprotokolle und einen integrierten
+          Shop für Nährstofftherapien zusammenbringt. Über die
+          Inhouse-Apotheken-Logik werden Praxis-Workflows erstmals durchgängig
+          abbildbar.
+        </p>
+
+        <p>
+          Als ich dazukam, war das Produkt da. Das Versprechen war klar. Was
+          fehlte, war das <strong>Backend für Wachstum</strong>.
+        </p>
+
+        <h2>Was wir vorgefunden haben</h2>
+
+        <p>
+          Kein CRM. Keine saubere Kontakt-Datenbasis. Keine Logik, wie aus
+          Early Adoptern später zahlende Kund:innen werden. Newsletter ohne
+          Segmentierung. Customer Success ohne System. Jede dieser Lücken
+          wäre für sich überschaubar. Zusammen ergeben sie ein Backend, das
+          in Phase eins improvisiert und in Phase zwei teuer wird: manuelle
+          Datenflicker, verlorene Leads, kein klares Bild, wer eigentlich im
+          System ist.
+        </p>
+
+        <h2>Der Engpass: erst das Fundament, dann das Wachstum</h2>
+
+        <p>
+          Die naheliegende Diagnose wäre gewesen: „Wir brauchen mehr Leads."
+          Sie ist falsch. Mehr Leads in ein chaotisches CRM zu kippen
+          verstärkt nur das Chaos. <strong>Bevor skaliert wird, muss das
+          Fundament stehen.</strong> Sonst wird Wachstum nicht zur Chance,
+          sondern zum Risiko.
+        </p>
+
+        <h2>HubSpot als Rückgrat</h2>
+
+        <p>
+          Mein Job war pragmatisch. <strong>HubSpot</strong> als zentrales
+          CRM einführen und sauber aufsetzen. Kontakte, Unternehmen und
+          relevante Eigenschaften strukturieren, nicht overengineered, sondern
+          auf das Wesentliche reduziert. Synchronisationslogik mit der
+          Web-App, sodass jede Registrierung automatisch sauber im CRM
+          landet. Newsletter mit klaren Segmenten und definierten ICPs.
+        </p>
+
+        <h2>Messen, Monetarisierung, Customer Success</h2>
+
+        <p>
+          Parallel haben wir die <strong>ersten Messen</strong> vorbereitet,
+          mit ordentlichen Leadformularen, sodass nichts verloren geht. Die
+          Abo- und Monetarisierungslogik durchgedacht. Ein
+          <strong>Ticketing-System über HubSpot</strong> eingeführt, damit
+          Customer-Success-Feedback strukturiert eingeht und sich später auch
+          für AI-gestützte Auswertungen nutzen lässt.
+        </p>
+
+        <h2>Vertrauen aufbauen</h2>
+
+        <p>
+          Auf der Vertrauens-Seite kamen <strong>Testimonial-Shoots</strong>
+          dazu, ein Blog als Wissensbasis und das
+          <strong>Founding-Experts-Programm</strong>, eine Community von
+          Early Adopter:innen, die das Produkt aktiv mitprägen. Drei
+          Bausteine, die später nicht nachgebaut werden können, weil
+          Vertrauen, Inhalt und Community Zeit brauchen.
+        </p>
+
+        <h2>Was rauskam</h2>
+
+        <p>
+          Innerhalb weniger Monate stand ein sauberes Fundament: CRM,
+          Lead-Strukturen, Customer-Success-Loop, erste Vertrauensanker im
+          Markt. <strong>Kein Wachstums-Hack.</strong> Aber das, was Wachstum
+          überhaupt erst skalierbar macht.
+        </p>
+
+        <p>
+          Eigentlich ging es nie um HubSpot. Es ging darum, einer Plattform
+          mit großem Versprechen die Infrastruktur zu geben, die das
+          Versprechen einlöst. Und das Prinzip ist übertragbar auf jedes
+          Produkt, das schneller wachsen will, als sein Backend es zulässt.
+        </p>
+
+      </div>
+
+      <aside class="case__facts" aria-label="Eckdaten zum Projekt">
+        <p class="case__facts-label">Eckdaten</p>
+        <ul class="case__facts-list">
+          <li>
+            <span class="case__facts-num">2024</span>
+            <span class="case__facts-meta">Beginn der Zusammenarbeit</span>
+          </li>
+          <li>
+            <span class="case__facts-num">Wenige Monate</span>
+            <span class="case__facts-meta">bis das Fundament stand</span>
+          </li>
+          <li>
+            <span class="case__facts-num">HubSpot</span>
+            <span class="case__facts-meta">zentrales CRM &amp; Ticketing</span>
+          </li>
+          <li>
+            <span class="case__facts-num">Founding Experts</span>
+            <span class="case__facts-meta">Community von Early Adopter:innen</span>
+          </li>
+          <li>
+            <span class="case__facts-num">B2B HealthTech</span>
+            <span class="case__facts-meta">Praxisplattform für Therapeut:innen</span>
+          </li>
+        </ul>
+      </aside>
+
+    </div>
+
+    <!-- Client-Testimonial -->
+    <aside class="testimonial" aria-label="Testimonial">
+      <p class="testimonial__quote">
+        „Marius hat uns geholfen, gerade in der Anfangszeit einen Fokus und eine solide
+        Basis aufzubauen, insbesondere im Bereich Vertrieb und Marketing. Er war nicht
+        nur in der Theorie stark, sondern hands-on in der Umsetzung, und hat operativ viel
+        Arbeit abgenommen, auf der wir heute noch aufbauen. Marius ist so: er ist da, er
+        hört zu, er macht."
+      </p>
+      <div class="testimonial__attribution">
+        <span class="testimonial__name">Dr. Reiner Kraft</span>
+        <span class="testimonial__role">EVER Health</span>
+      </div>
+    </aside>
+
+    <div class="case__footer">
+      <span>Branche · B2B HealthTech &amp; SaaS</span>
+      <span>HubSpot · Newsletter · Customer Success · Founding Experts</span>
+    </div>
+
+    <div class="case__cta-end">
+      <h2>Bevor du skalierst, muss das Fundament stehen.</h2>
+      <p>
+        Ob Vertriebsaufbau, CRM-Setup oder Go-to-Market. Wenn etwas hängt oder das
+        Backend für Wachstum noch fehlt, finde ich den Engpass und löse ihn.
+        30 Minuten reichen meist, um zu sehen, wo es wirklich hängt.
+      </p>
+      <a href="../index.html#kontakt" class="btn">
+        <span>Erstgespräch buchen</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 cosmoworks.studio · Marius Bracke · Berlin</p>
+      <p>
+        <a href="../impressum.html">Impressum</a>
+        <span class="footer__sep">·</span>
+        <a href="../datenschutz.html">Datenschutz</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

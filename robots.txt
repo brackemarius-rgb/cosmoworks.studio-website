@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /hero-v2-snapshot.html
+Disallow: /index.alt.html
+
+Sitemap: https://cosmoworks.studio/sitemap.xml

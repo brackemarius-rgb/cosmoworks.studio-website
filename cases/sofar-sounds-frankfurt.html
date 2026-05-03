@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sofar Sounds Frankfurt — Case Study | cosmoworks.studio</title>
+  <meta name="description" content="Wie ich 2015 Sofar Sounds nach Frankfurt geholt und drei Jahre lang aktiv aufgebaut habe — eine Konzertreihe, die seit zehn Jahren läuft. Case Study von Marius Bracke." />
+  <meta name="author" content="Marius Bracke" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#fbfaf6" />
+  <link rel="canonical" href="https://cosmoworks.studio/cases/sofar-sounds-frankfurt.html" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:url" content="https://cosmoworks.studio/cases/sofar-sounds-frankfurt.html" />
+  <meta property="og:title" content="Sofar Sounds Frankfurt — von Null aufgebaut, läuft seit zehn Jahren" />
+  <meta property="og:description" content="2015 das globale Sofar-Sounds-Format nach Frankfurt geholt, eine Konzertreihe aufgebaut, die heute noch läuft. Case Study von Marius Bracke." />
+  <meta property="og:image" content="https://cosmoworks.studio/img/Marius%20Portraits/Marius%20Portrait%20color.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sofar Sounds Frankfurt — Case Study",
+    "description": "Wie ich 2015 Sofar Sounds nach Frankfurt geholt und drei Jahre lang aktiv aufgebaut habe.",
+    "author": { "@type": "Person", "name": "Marius Bracke", "url": "https://cosmoworks.studio/" },
+    "publisher": { "@type": "Organization", "name": "cosmoworks.studio", "url": "https://cosmoworks.studio/" },
+    "datePublished": "2026-05-02",
+    "about": [
+      { "@type": "Thing", "name": "Sofar Sounds" },
+      { "@type": "Place", "name": "Frankfurt am Main" }
+    ],
+    "keywords": "Sofar Sounds Frankfurt, Konzertreihe Frankfurt, Markenaufbau Live-Musik, Community-Aufbau, Backward Thinking"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --c-paper:      #fbfaf6;
+      --c-paper-dark: #f3f0e8;
+      --c-ink:        #1a1814;
+      --c-ink-50:     rgba(26,24,20,0.50);
+      --c-ink-65:     rgba(26,24,20,0.65);
+      --c-ink-80:     rgba(26,24,20,0.80);
+      --c-rule:       rgba(26,24,20,0.16);
+      --c-sage:       #7d8a7a;
+      --c-sage-dk:    #5e6a5b;
+      --f-sans:       'Switzer', -apple-system, BlinkMacSystemFont, sans-serif;
+      --t-head-l:     clamp(2.4rem, 5.5vw, 4.25rem);
+      --t-body-l:     clamp(1.15rem, 1.7vw, 1.4rem);
+      --t-body:       clamp(0.95rem, 1.2vw, 1.1rem);
+      --t-caption:    0.7rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--c-paper);
+      background-image:
+        radial-gradient(ellipse 65% 50% at 10% 15%, rgba(125,138,122,0.38), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 90% 85%, rgba(168,152,136,0.34), transparent 60%),
+        radial-gradient(ellipse 80% 60% at 55% 50%, rgba(220,196,156,0.42), transparent 65%);
+      background-attachment: fixed;
+      color: var(--c-ink);
+      font-family: var(--f-sans);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.07 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.04;
+      mix-blend-mode: multiply;
+    }
+
+    .header {
+      position: relative;
+      z-index: 2;
+      padding: 1.5rem clamp(1.25rem, 4vw, 3rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px solid var(--c-rule);
+    }
+    .brand {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: -0.015em;
+      color: var(--c-ink);
+      text-decoration: none;
+    }
+    .brand::before {
+      content: '◐';
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: var(--c-sage);
+      transform: translateY(-1px);
+      font-size: 0.85em;
+    }
+    .header__nav { display: flex; gap: 1.5rem; align-items: center; }
+    .header__nav a {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: 0.825rem;
+      color: var(--c-ink-65);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .header__nav a:hover { color: var(--c-ink); }
+
+    main {
+      position: relative;
+      z-index: 2;
+      max-width: 88rem;
+      margin: 0 auto;
+      padding: clamp(4rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3rem) clamp(5rem, 10vw, 8rem);
+    }
+
+    .kicker {
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-ink-65);
+    }
+    .kicker__num {
+      font-family: var(--f-sans);
+      font-weight: 700;
+      color: var(--c-sage);
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      margin-top: 1.25rem;
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-head-l);
+      line-height: 1;
+      letter-spacing: -0.035em;
+      color: var(--c-ink);
+      max-width: 22ch;
+    }
+    h1 strong { font-weight: 800; color: var(--c-sage-dk); }
+
+    .case__client {
+      margin-top: clamp(2.5rem, 5vw, 3.5rem);
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--c-rule);
+      border-bottom: 1px solid var(--c-rule);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      align-items: center;
+    }
+    @media (min-width: 640px) {
+      .case__client { grid-template-columns: auto 1fr 1fr 1fr; gap: 2rem; }
+    }
+    .case__client-logo {
+      max-height: 3.25rem;
+      width: auto;
+      max-width: 12rem;
+      opacity: 0.85;
+      object-fit: contain;
+    }
+    .case__client-meta { display: flex; flex-direction: column; gap: 0.4rem; }
+    .case__client-meta span {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+    }
+    .case__client-meta strong {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-body);
+      line-height: 1.3;
+      color: var(--c-ink);
+      letter-spacing: -0.005em;
+    }
+
+    .case__layout {
+      margin-top: clamp(2.5rem, 5vw, 3.5rem);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      align-items: start; /* wichtig für sticky in der zweiten Spalte */
+    }
+    @media (min-width: 1024px) {
+      .case__layout { grid-template-columns: 6fr 4fr; }
+    }
+    .case__body {
+      max-width: 44rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .case__body p {
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: var(--t-body-l);
+      line-height: 1.55;
+      color: var(--c-ink-80);
+      letter-spacing: -0.005em;
+    }
+    .case__body p strong { font-weight: 600; color: var(--c-ink); }
+
+    /* Subheadings innerhalb der Case-Erzählung */
+    .case__body h2 {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: clamp(1.4rem, 2vw, 1.85rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+      margin-top: clamp(1rem, 2vw, 1.75rem);
+    }
+    .case__body > h2:first-child { margin-top: 0; }
+
+    /* Eckdaten-Sidebar (sticky auf Desktop) */
+    .case__facts {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.5rem, 2.5vw, 2rem);
+      max-width: 28rem;
+    }
+    @media (min-width: 1024px) {
+      .case__facts {
+        position: sticky;
+        top: 2rem;
+      }
+    }
+    .case__facts-label {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--c-sage);
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--c-rule);
+    }
+    .case__facts-list {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1.25rem, 2vw, 1.75rem);
+      list-style: none;
+      padding: 0;
+    }
+    .case__facts-list li {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .case__facts-num {
+      font-family: var(--f-sans);
+      font-weight: 700;
+      font-size: clamp(1.5rem, 2.2vw, 1.85rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+    }
+    .case__facts-meta {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+    }
+
+    /* Testimonial */
+    .testimonial {
+      margin-top: clamp(3rem, 6vw, 4.5rem);
+      padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+      border-top: 1px solid var(--c-rule);
+      border-bottom: 1px solid var(--c-rule);
+    }
+    .testimonial__quote {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+      line-height: 1.35;
+      color: var(--c-ink);
+      letter-spacing: -0.015em;
+      max-width: 56rem;
+    }
+    .testimonial__attribution {
+      margin-top: clamp(1.5rem, 2.5vw, 2rem);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .testimonial__name {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: var(--t-body);
+      color: var(--c-ink);
+      letter-spacing: -0.005em;
+    }
+    .testimonial__role {
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+    }
+
+    .case__footer {
+      margin-top: clamp(3rem, 5vw, 4rem);
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--c-rule);
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: var(--t-caption);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--c-ink-50);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .case__footer a {
+      color: var(--c-ink-65);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .case__footer a:hover { color: var(--c-ink); }
+
+    .case__cta-end {
+      margin-top: clamp(3rem, 5vw, 4rem);
+      padding: clamp(2rem, 4vw, 2.75rem);
+      background: var(--c-paper-dark);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+    .case__cta-end h2 {
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: clamp(1.4rem, 2.4vw, 1.875rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--c-ink);
+      max-width: 32ch;
+    }
+    .case__cta-end p {
+      font-family: var(--f-sans);
+      font-weight: 400;
+      font-size: var(--t-body);
+      line-height: 1.55;
+      color: var(--c-ink-65);
+      max-width: 42rem;
+    }
+    .case__cta-end .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--c-ink);
+      color: var(--c-paper);
+      font-family: var(--f-sans);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.35rem;
+      text-decoration: none;
+      transition: gap 0.25s ease, background-color 0.25s ease;
+      margin-top: 0.5rem;
+    }
+    .case__cta-end .btn:hover { background: var(--c-sage-dk); gap: 0.85rem; }
+
+    .footer {
+      position: relative;
+      z-index: 2;
+      background: var(--c-ink);
+      color: rgba(251,250,246,0.50);
+      padding: 2.25rem clamp(1.25rem, 4vw, 3rem);
+      font-family: var(--f-sans);
+      font-size: 0.825rem;
+    }
+    .footer__inner {
+      max-width: 88rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    @media (min-width: 640px) {
+      .footer__inner { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    .footer a { color: rgba(251,250,246,0.50); text-decoration: none; }
+    .footer a:hover { color: rgba(251,250,246,1); }
+    .footer__sep { color: rgba(251,250,246,0.25); margin: 0 0.5rem; }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="../index.html" class="brand">cosmoworks.studio</a>
+    <nav class="header__nav">
+      <a href="../cases.html">Cases</a>
+      <a href="../index.html">← Startseite</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="kicker">
+      <span class="kicker__num">Case · 02</span>
+      <span>Sofar Sounds Frankfurt</span>
+    </div>
+
+    <h1>
+      Frankfurt hatte alles.<br />
+      Außer dem, der <strong>anfängt</strong>.
+    </h1>
+
+    <div class="case__client">
+      <img class="case__client-logo"
+           src="../img/Logos/Sofar_Sounds_logo.png"
+           alt="Sofar Sounds"
+           loading="lazy" />
+      <div class="case__client-meta">
+        <span>Marke</span>
+        <strong>Sofar Sounds Frankfurt,<br />mit Erlaubnis &amp; Support von Sofar Sounds Global</strong>
+      </div>
+      <div class="case__client-meta">
+        <span>Zeitraum</span>
+        <strong>2015 – 2018 (aktiv)<br />Reihe läuft seit 10 Jahren</strong>
+      </div>
+      <div class="case__client-meta">
+        <span>Leistung</span>
+        <strong>Initiierung · Markenaufbau · Booking · Partnerschaften · Community</strong>
+      </div>
+    </div>
+
+    <div class="case__layout">
+
+      <div class="case__body">
+
+        <p>
+          „Songs From A Room." Was 2009 in einem Londoner Wohnzimmer anfing, ein
+          paar Freunde, leise, ohne Smartphone-Lärm, wurde zur globalen Bewegung.
+          Bis 2015 lief Sofar Sounds in dutzenden Städten weltweit. Frankfurt war
+          nicht dabei.
+        </p>
+
+        <p>
+          2015 war ich Wirtschaftsstudent an der <strong>Goethe-Universität
+          Frankfurt</strong> und vermisste die Live-Musik-Szene, die ich aus Berlin
+          und Hamburg kannte. Frankfurt hatte Konzertbühnen. Frankfurt hatte den
+          Mousonturm. Frankfurt hatte die Alte Oper. Aber das, was Sofar-Sounds-Abende
+          ausmachte, das gab es hier nicht: wildfremde Menschen, die in einem
+          Wohnzimmer sitzen und drei Acts entdecken, deren Namen sie nicht kennen.
+        </p>
+
+        <p>
+          Wer kennt das nicht: Du sitzt in einer Stadt, die alles haben könnte, und
+          merkst, dass etwas Bestimmtes einfach fehlt.
+        </p>
+
+        <h2>Vom Ende her gedacht</h2>
+
+        <p>
+          Ich habe mich gefragt, wie ich meine Wochenenden in Frankfurt eigentlich
+          verbringen wollte. Nicht im Allgemeinen, konkret. Welcher Abend würde
+          mich nach Hause schicken mit dem Gefühl, etwas Echtes erlebt zu haben?
+          Die Antwort war klar: ein Abend, an dem ich nicht weiß, was kommt. In
+          einem Raum, der eigentlich keine Bühne hat. Mit Menschen, die wegen der
+          Musik da sind, nicht wegen der Drinks.
+        </p>
+
+        <p>
+          Das war kein abstrakter Wunsch, das war eine Designvorgabe. Wenn ich
+          diesen Abend wollte, mussten Hunderte andere ihn auch wollen. Und wenn
+          keiner ihn baute, musste ich es selbst tun.
+        </p>
+
+        <p>
+          Der eigentliche Engpass war nicht „Frankfurt ist nicht musikalisch genug."
+          Frankfurt hatte alles, was man braucht: Räume, Menschen, Geld,
+          Aufmerksamkeit. <strong>Was fehlte, war jemand, der anfängt.</strong>
+        </p>
+
+        <h2>Grünes Licht aus London</h2>
+
+        <p>
+          Also bin ich nach London geflogen, habe ein paar Sofar-Sounds-Abende
+          besucht und mich danach mit <strong>Rafe Offer</strong> getroffen, einem
+          der Sofar-Gründer. Ich habe ihm den Plan für Frankfurt vorgestellt, und
+          er gab mir die Zusage. Im Frühjahr 2015 hatten wir die offizielle Erlaubnis und den
+          Support, das Format in Frankfurt zu betreiben.
+        </p>
+
+        <h2>Was ich konkret gebaut habe</h2>
+
+        <p>
+          Was nicht da war, musste entstehen: Team, Räume, Künstler-Pipeline,
+          Audience. Ich habe nicht moderiert, ich habe gebaut.
+        </p>
+
+        <p>
+          Im Detail: Ich habe ein kleines Team aufgebaut, mit
+          <strong>Videograf:innen, Fotograf:innen, Booker:innen und operativen
+          Helfer:innen</strong>. Menschen, die nicht für Geld kamen, sondern weil
+          sie das Format genauso wollten wie ich. Wir haben Räume gefunden, die
+          vorher nie als Bühnen gedacht waren: Cafés, Hotels, später Museen,
+          Banken, Privatwohnungen. Wir haben internationale Künstler:innen gebucht:
+          aus Israel, Mexiko, Brasilien, Italien, England. Bei uns spielten Acts
+          wie <strong>Faber</strong>, <strong>TheAngelcy</strong> oder
+          <strong>AB Syndrom</strong>.
+        </p>
+
+        <p>
+          Vor allem aber haben wir <strong>Menschen zusammengebracht, die sich
+          sonst nie im selben Raum gesehen hätten</strong>: Studierende,
+          Künstler:innen, Unternehmer:innen, Kulturschaffende. Die Mischung war
+          Teil des Versprechens.
+        </p>
+
+        <h2>Was schwer war</h2>
+
+        <p>
+          Das größte Risiko war nicht das Format. Sofar hatte sich international
+          längst bewiesen. Das Risiko war: ob Frankfurt dieses Format auch will.
+          Ob Menschen ohne bekannten Lineup zu einem Abend in einem fremden Raum
+          kommen. Das ist Vertrauen, und Vertrauen baut sich nicht in einem
+          Konzert.
+        </p>
+
+        <p>
+          Die ersten Abende waren klein. Aber sie waren echt. Wer einmal da war,
+          kam wieder und brachte Freunde mit. So entstand die Audience: nicht
+          über Marketing, sondern über das Format selbst.
+        </p>
+
+        <h2>Was es bedeutet hat</h2>
+
+        <p>
+          Drei Jahre habe ich Sofar Sounds Frankfurt aktiv aufgebaut. 2018 bin ich
+          nach Berlin gegangen und habe die Reihe an ein neues Team übergeben.
+          Heute, fast zehn Jahre später, läuft Sofar Sounds Frankfurt immer noch.
+        </p>
+
+        <p>
+          <strong>Sie hat sogar Corona überlebt, weil das Fundament trug.</strong>
+          Das Vertrauen der Frankfurter:innen in die Marke war so groß, dass sich
+          nach der Pandemie alle freuten, wieder loszulegen.
+        </p>
+
+        <p>
+          Eigentlich ging es nie um ein Konzertformat. Es ging um die Frage: Was
+          passiert, wenn man nicht wartet, dass jemand anfängt? Und das Prinzip
+          ist übertragbar auf Marken, Städte, Strukturen, denen nur noch der
+          erste Schritt fehlt.
+        </p>
+
+      </div>
+
+      <aside class="case__facts" aria-label="Eckdaten zum Projekt">
+        <p class="case__facts-label">Eckdaten</p>
+        <ul class="case__facts-list">
+          <li>
+            <span class="case__facts-num">2015</span>
+            <span class="case__facts-meta">Beginn in Frankfurt</span>
+          </li>
+          <li>
+            <span class="case__facts-num">3 Jahre</span>
+            <span class="case__facts-meta">Aufbau, persönlich begleitet</span>
+          </li>
+          <li>
+            <span class="case__facts-num">5 Länder</span>
+            <span class="case__facts-meta">Künstler-Buchungen weltweit</span>
+          </li>
+          <li>
+            <span class="case__facts-num">Cafés bis Banken</span>
+            <span class="case__facts-meta">Räume, die nie Bühnen waren</span>
+          </li>
+          <li>
+            <span class="case__facts-num">10 Jahre</span>
+            <span class="case__facts-meta">läuft bis heute</span>
+          </li>
+        </ul>
+      </aside>
+
+    </div>
+
+    <!-- Client-Testimonial -->
+    <aside class="testimonial" aria-label="Testimonial">
+      <p class="testimonial__quote">
+        „Marius hat mit Sofar Sounds Frankfurt eine Konzertreihe aufgebaut, auf deren
+        Fundament wir sogar nach Corona aufbauen konnten. Die Reputation der Marke aus
+        der Anfangszeit hat uns geholfen, das Format auch nach der Pandemie weiterzuführen.
+        Das Vertrauen der Frankfurter:innen in die Marke war so stark, dass wir uns alle
+        gefreut haben, wieder weiterzumachen."
+      </p>
+      <div class="testimonial__attribution">
+        <span class="testimonial__name">Olga</span>
+        <span class="testimonial__role">Sofar Sounds Frankfurt, heute</span>
+      </div>
+    </aside>
+
+    <div class="case__footer">
+      <span>Branche · Live-Musik &amp; Community-Aufbau</span>
+      <a href="https://www.sofarsounds.com/cities/frankfurt"
+         target="_blank"
+         rel="noopener noreferrer">
+        Sofar Sounds Frankfurt heute ↗
+      </a>
+    </div>
+
+    <div class="case__cta-end">
+      <h2>Du brauchst jemand, der anfängt?</h2>
+      <p>
+        Egal ob Marke, Vertriebsstruktur oder Format. Wenn etwas hängt, finde ich den
+        Engpass und löse ihn. 30 Minuten reichen meist, um zu sehen, wo es wirklich hängt.
+      </p>
+      <a href="../index.html#kontakt" class="btn">
+        <span>Erstgespräch buchen</span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 cosmoworks.studio · Marius Bracke · Berlin</p>
+      <p>
+        <a href="../impressum.html">Impressum</a>
+        <span class="footer__sep">·</span>
+        <a href="../datenschutz.html">Datenschutz</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
