@@ -88,12 +88,13 @@
       text-decoration: none;
     }
     .brand::before {
-      content: '◐';
+      content: '';
       display: inline-block;
+      width: 1.1em;
+      height: 1.1em;
       margin-right: 0.5rem;
-      color: var(--c-sage);
-      transform: translateY(-1px);
-      font-size: 0.85em;
+      background: url('img/csws-mark-black.png') center/contain no-repeat;
+      vertical-align: -0.2em;
     }
     .header__nav { display: flex; gap: 1.5rem; align-items: center; }
     .header__nav a {

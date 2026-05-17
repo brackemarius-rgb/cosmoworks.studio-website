@@ -248,12 +248,13 @@
       flex-shrink: 0;
     }
     .brand::before {
-      content: '◐';
+      content: '';
       display: inline-block;
+      width: 1.1em;
+      height: 1.1em;
       margin-right: 0.5rem;
-      color: var(--c-sage);
-      transform: translateY(-1px);
-      font-size: 0.85em;
+      background: url('img/csws-mark-black.png') center/contain no-repeat;
+      vertical-align: -0.2em;
     }
 
     .nav { display: flex; align-items: baseline; gap: clamp(1rem, 2.5vw, 1.85rem); }
@@ -1576,10 +1577,9 @@
       border-bottom: 1px solid rgba(251,250,246,0.10);
     }
     .footer__brand-mark {
-      font-size: clamp(1.75rem, 3vw, 2.25rem);
-      color: var(--c-sage);
-      line-height: 1;
-      transform: translateY(-2px);
+      width: clamp(1.75rem, 3vw, 2.25rem);
+      height: clamp(1.75rem, 3vw, 2.25rem);
+      display: block;
     }
     .footer__brand-name {
       font-family: var(--f-sans);
@@ -2255,7 +2255,7 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__brand">
-        <span class="footer__brand-mark" aria-hidden="true">◐</span>
+        <img class="footer__brand-mark" src="img/csws-mark-white.png" alt="" aria-hidden="true" />
         <span class="footer__brand-name">cosmoworks.studio</span>
       </div>
       <div class="footer__legal-row">
