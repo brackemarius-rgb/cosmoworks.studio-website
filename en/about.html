@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Über mich — Marius Bracke | cosmoworks.studio</title>
-  <meta name="description" content="Marius Bracke: Berater für Vertrieb, Markenpositionierung und Geschäftsentwicklung. Zehn Jahre Eventformate, sechs Jahre B2B-Vertrieb, Bachelorarbeit zu identitätsorientierter Markenführung. Berlin." />
+  <title>About — Marius Bracke | cosmoworks.studio</title>
+  <meta name="description" content="Marius Bracke: consultant for sales, brand positioning, and business development. Ten years of event formats, six years of B2B sales, bachelor's thesis on identity-based brand management. Berlin." />
   <meta name="author" content="Marius Bracke" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#fbfaf6" />
-  <link rel="canonical" href="https://cosmoworks.studio/ueber-mich.html" />
+  <link rel="canonical" href="https://cosmoworks.studio/en/about.html" />
   <link rel="alternate" hreflang="de" href="https://cosmoworks.studio/ueber-mich.html" />
   <link rel="alternate" hreflang="en" href="https://cosmoworks.studio/en/about.html" />
   <link rel="alternate" hreflang="x-default" href="https://cosmoworks.studio/ueber-mich.html" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:locale" content="de_DE" />
-  <meta property="og:url" content="https://cosmoworks.studio/ueber-mich.html" />
-  <meta property="og:title" content="Marius Bracke — Über mich" />
-  <meta property="og:description" content="Wie aus zehn Jahren Bühne und sechs Jahren B2B-Vertrieb ein eigener Blick auf Founder-Wachstum wurde." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:url" content="https://cosmoworks.studio/en/about.html" />
+  <meta property="og:title" content="Marius Bracke — About" />
+  <meta property="og:description" content="How ten years on stage and six years in B2B sales became a unique perspective on founder growth." />
   <meta property="og:image" content="https://cosmoworks.studio/img/Marius%20Portraits/Marius%20Portrait%20color.jpg" />
 
-  <link rel="stylesheet" href="/fonts.css" />
+  <link rel="stylesheet" href="../fonts.css" />
 
   <style>
     :root {
@@ -69,9 +70,6 @@
       mix-blend-mode: multiply;
     }
 
-    /* ============================================================
-       Header (gleich wie Cases)
-       ============================================================ */
     .header {
       position: relative;
       z-index: 2;
@@ -96,7 +94,7 @@
       width: 1.1em;
       height: 1.1em;
       margin-right: 0.5rem;
-      background: url('img/csws-mark-black.png') center/contain no-repeat;
+      background: url('../img/csws-mark-black.png') center/contain no-repeat;
       vertical-align: -0.2em;
     }
     .header__nav { display: flex; gap: 1.5rem; align-items: center; }
@@ -129,9 +127,6 @@
     .lang-toggle__link.is-current { color: var(--c-ink); font-weight: 700; pointer-events: none; }
     .lang-toggle__sep { color: var(--c-ink-50); }
 
-    /* ============================================================
-       Main
-       ============================================================ */
     main {
       position: relative;
       z-index: 2;
@@ -140,9 +135,6 @@
       padding: clamp(4rem, 7vw, 6rem) clamp(1.25rem, 4vw, 3rem) clamp(5rem, 10vw, 8rem);
     }
 
-    /* ============================================================
-       Bio-Layout — Body links, Sticky-Aside rechts (Case Study Pattern)
-       ============================================================ */
     .bio__layout {
       display: grid;
       grid-template-columns: 1fr;
@@ -231,7 +223,6 @@
       color: var(--c-ink-50);
     }
 
-    /* Intro-Block oben im Body */
     .bio__intro {
       display: flex;
       flex-direction: column;
@@ -239,16 +230,12 @@
     }
     .bio__intro .body { gap: 1.25rem; }
 
-    /* Erste Section innerhalb des Body hat keinen Trenner oben */
     .bio__body > .section:first-child {
       margin-top: 0;
       padding-top: 0;
       border-top: 0;
     }
 
-    /* ============================================================
-       Section pattern
-       ============================================================ */
     .section {
       position: relative;
       margin-top: clamp(2rem, 4vw, 3.25rem);
@@ -311,9 +298,6 @@
     }
     .body > h3:first-child { margin-top: 0; }
 
-    /* ============================================================
-       CTA
-       ============================================================ */
     .cta-end {
       margin-top: clamp(4rem, 8vw, 6rem);
       padding: clamp(2rem, 4vw, 2.75rem);
@@ -356,9 +340,6 @@
     }
     .cta-end .btn:hover { background: var(--c-sage-dk); gap: 0.85rem; }
 
-    /* ============================================================
-       Footer (gleich wie Cases)
-       ============================================================ */
     .footer {
       position: relative;
       z-index: 2;
@@ -390,11 +371,12 @@
     <a href="index.html" class="brand">cosmoworks.studio</a>
     <nav class="header__nav">
       <a href="cases.html">Cases</a>
-      <a href="index.html">← Startseite</a>
+      <a href="index.html">← Home</a>
+      <span class="lang-toggle__sep">·</span>
       <div class="lang-toggle">
-        <span class="lang-toggle__link is-current">DE</span>
+        <a href="../ueber-mich.html" class="lang-toggle__link">DE</a>
         <span class="lang-toggle__sep">·</span>
-        <a href="en/about.html" class="lang-toggle__link">EN</a>
+        <span class="lang-toggle__link is-current">EN</span>
       </div>
     </nav>
   </header>
@@ -403,170 +385,159 @@
 
     <div class="bio__layout">
 
-      <!-- BODY (links): Intro + alle Sections -->
       <div class="bio__body">
 
-        <!-- INTRO -->
         <section class="bio__intro">
           <p class="kicker">
             <span class="kicker__num">·</span>
-            <span>Über mich</span>
+            <span>About</span>
           </p>
-          <h1>Wer ich bin.</h1>
+          <h1>Who I am.</h1>
           <div class="body">
             <p>
-              Lässt sich nicht in einem Job-Titel sagen.
-              Wirtschaftswissenschaftler, der Konzerte gebaut hat. Vertriebler,
-              der über Markenpsychologie nachdenkt. Unternehmensberater, der
-              lieber selbst macht. Die Kombination ist die Geschichte.
+              Can't be summed up in a job title. An economist who built concerts.
+              A salesperson who thinks about brand psychology. A consultant
+              who'd rather do it himself. The combination is the story.
             </p>
             <p>
-              Was klingt wie viele Welten, ist im Kern dasselbe Handwerk:
-              Strukturen bauen, Vertrauen aufbauen, Menschen zusammenbringen.
+              What sounds like many worlds is at its core the same craft:
+              building structures, building trust, bringing people together.
             </p>
           </div>
         </section>
 
 
-    <!-- 01 — Wo ich herkomme -->
     <section class="section">
       <div class="section__head">
         <span class="num">01</span>
-        <span>Wo ich herkomme</span>
+        <span>Where I come from</span>
       </div>
-      <h2>Zwei Welten, dieselbe <strong>Mechanik</strong>.</h2>
+      <h2>Two worlds, the same <strong>mechanics</strong>.</h2>
 
       <div class="body">
 
-        <h3>Kultur und Bühne</h3>
+        <h3>Culture and stage</h3>
         <p>
-          Über zehn Jahre habe ich Eventformate aufgebaut. Music Sneak in
+          For over ten years I've been building event formats. Music Sneak in
           Frankfurt, Sofar Sounds Frankfurt, Cosmo Social Club in Berlin.
-          Jedes Format aus dem Nichts, ohne Künstlernamen, der zieht, und
-          ohne Raum, den die Stadt schon kennt.
+          Every format from nothing — no artist name to pull people in,
+          no venue the city already knew.
         </p>
         <p>
-          Was ich daraus mitgenommen habe: wie man aus dem Nichts Vertrauen
-          baut. Wie man Menschen zusammenbringt, die sich sonst nie
-          getroffen hätten. Wie eine Marke entsteht, nicht durch Budget, sondern durch Wiederholung
-          und Konsistenz.
-        </p>
-
-        <h3>B2B-Vertrieb</h3>
-        <p>
-          Parallel kam der Vertrieb. Sechs Jahre, in Software, IT, Real
-          Estate und Kultur. twotickets, talque, UpVisit. Heute begleite
-          ich Founder operativ, zusätzlich im Aufbau von EVER Health oder in
-          der Strukturierung des Vertriebs und Marketings der Firma
-          Real Life Interaction und der Marke talque.
-        </p>
-        <p>
-          Was ich daraus mitgenommen habe: wie Vertriebssysteme aussehen,
-          die nicht nur eine Quartalskampagne überleben. Warum die meisten
-          Sales-Probleme keine Sales-Probleme sind, sondern
-          Wahrnehmungsprobleme. Warum Founder oft nicht wissen, wie ihr
-          Markt sie sieht. Und warum diese Lücke das eigentliche
-          Wachstumshindernis ist.
+          What I took from it: how to build trust from zero. How to bring
+          together people who would otherwise never have met. How a brand
+          emerges — not through budget, but through repetition and consistency.
         </p>
 
-        <h3>Die Verbindung</h3>
+        <h3>B2B sales</h3>
         <p>
-          Klingt nach zwei Welten. Ist es nicht.
+          In parallel came sales. Six years across software, IT, real estate,
+          and culture. twotickets, talque, UpVisit. Today I support founders
+          operationally — among others in the build-up of EVER Health, and in
+          structuring sales and marketing at Real Life Interaction and the
+          talque brand.
         </p>
         <p>
-          Beides ist Aufbau aus dem Nichts. Beides hat dieselben
-          Mechaniken: Vertrauen, Timing, Wahrnehmung. Beides scheitert
-          nicht an der Idee, sondern an der Mechanik dahinter.
+          What I took from it: what sales systems look like when they survive
+          more than a single quarterly campaign. Why most sales problems
+          aren't sales problems but perception problems. Why founders often
+          don't know how their market sees them. And why that gap is the real
+          growth obstacle.
+        </p>
+
+        <h3>The connection</h3>
+        <p>
+          Sounds like two worlds. It's not.
+        </p>
+        <p>
+          Both are building from nothing. Both run on the same mechanics:
+          trust, timing, perception. Both fail not at the idea, but at the
+          mechanics behind it.
         </p>
 
       </div>
     </section>
 
 
-    <!-- 02 — Wie ich denke -->
     <section class="section">
       <div class="section__head">
         <span class="num">02</span>
-        <span>Wie ich denke</span>
+        <span>How I think</span>
       </div>
-      <h2>Wahrnehmung folgt <strong>Regeln</strong>.</h2>
+      <h2>Perception follows <strong>rules</strong>.</h2>
 
       <div class="body">
         <p>
-          2016 habe ich an der Goethe-Universität meine Bachelorarbeit
-          geschrieben, über identitätsorientierte Markenführung und
-          Processing Fluency in der Karriereentwicklung von Musikern.
-          Klingt akademisch, ist es auch. Aber das, was ich damals
-          theoretisch durchgearbeitet habe, ist heute mein praktisches
-          Werkzeug.
+          In 2016 I wrote my bachelor's thesis at Goethe University Frankfurt
+          on identity-based brand management and processing fluency in the
+          career development of musicians. Sounds academic, and it was. But
+          what I worked through theoretically back then is now my practical
+          tool.
         </p>
         <p>
-          Identität ist, wer eine Marke oder ein Founder wirklich ist.
-          Image ist, wie der Markt sie sieht. Beide stehen selten exakt
-          übereinander. Meine Arbeit ist es, diese Lücke zu erkennen und
-          zu schließen, bevor sie zum Engpass wird.
+          Identity is who a brand or founder really is. Image is how the
+          market sees them. The two rarely sit exactly on top of each other.
+          My job is to recognize that gap and close it — before it becomes
+          the bottleneck.
         </p>
         <p>
-          Wahrnehmung folgt Regeln. Wer sie kennt, baut bessere Pitches,
-          klarere Positionierungen, tragfähigere Marken. Vertrieb ist
-          nicht in erster Linie Technik oder Skript. Er ist Wahrnehmung
-          in Bewegung. Genau dort setze ich an.
+          Perception follows rules. Whoever knows them builds better pitches,
+          clearer positioning, more durable brands. Sales isn't primarily
+          technique or script. It's perception in motion. That's exactly
+          where I work.
         </p>
       </div>
     </section>
 
 
-    <!-- 03 — Wo ich lebe, was mich antreibt -->
     <section class="section">
       <div class="section__head">
         <span class="num">03</span>
-        <span>Wo ich lebe, was mich antreibt</span>
+        <span>Where I live, what drives me</span>
       </div>
-      <h2>Aufbauen, nicht <strong>beraten</strong>.</h2>
+      <h2>Build, don't <strong>advise</strong>.</h2>
 
       <div class="body">
         <p>
-          Ich lebe in Berlin. Aufgewachsen bin ich im Odenwald, studiert
-          in Frankfurt, die Verbindung dorthin ist geblieben.
+          I live in Berlin. I grew up in the Odenwald, studied in Frankfurt,
+          and the connection there has stayed.
         </p>
         <p>
-          Was mich antreibt: aufbauen, nicht beraten. Verantwortung
-          übernehmen, nicht empfehlen. Ich habe nie verstanden, wie man
-          einen Plan abgibt und geht, bevor das erste Mal etwas getan
-          wurde. Mein Platz ist neben den Founders, nicht gegenüber.
+          What drives me: build, don't advise. Take responsibility, don't
+          recommend. I've never understood how someone can hand off a plan
+          and walk away before the first thing has been done. My place is
+          next to the founders, not across from them.
         </p>
       </div>
     </section>
 
       </div><!-- /bio__body -->
 
-      <!-- STICKY ASIDE (rechts): Foto + Tagline (H1 wandert in Body-Intro) -->
       <aside class="bio__sticky">
         <figure class="bio__photo">
-          <img src="img/Marius%20Portraits/Marius%20Portrait.webp"
-               alt="Portrait von Marius Bracke"
+          <img src="../img/Marius%20Portraits/Marius%20Portrait.webp"
+               alt="Portrait of Marius Bracke"
                loading="eager" />
         </figure>
         <p class="bio__sub">
-          Marius Bracke baut Strukturen: für Marken, für Vertrieb, für Räume,
-          in denen Menschen zusammenkommen. Studierter Wirtschaftswissenschaftler,
-          sechs Jahre B2B-Vertrieb, zehn Jahre Bühne. Lebt zwischen Berlin,
-          Odenwald und Montefiore dell&rsquo;Aso.
+          Marius Bracke builds structures: for brands, for sales, for rooms
+          where people come together. Trained economist, six years in B2B sales,
+          ten years on stage. Lives between Berlin, the Odenwald, and
+          Montefiore dell&rsquo;Aso.
         </p>
       </aside>
 
     </div><!-- /bio__layout -->
 
 
-    <!-- CTA -->
     <div class="cta-end">
-      <h2>Lass uns reden.</h2>
+      <h2>Let's talk.</h2>
       <p>
-        Wenn etwas hängt, finde ich den Engpass und löse ihn. 30 Minuten
-        reichen meist, um zu sehen, wo es wirklich hängt.
+        When something's stuck, I find the bottleneck and clear it. Thirty
+        minutes is usually enough to see where things are really stuck.
       </p>
-      <a href="index.html#kontakt" class="btn">
-        <span>Erstgespräch buchen</span>
+      <a href="index.html#contact" class="btn">
+        <span>Book intro call</span>
         <span aria-hidden="true">→</span>
       </a>
     </div>
@@ -577,9 +548,9 @@
     <div class="footer__inner">
       <p>© 2026 cosmoworks.studio · Marius Bracke · Berlin</p>
       <p>
-        <a href="impressum.html">Impressum</a>
+        <a href="imprint.html">Imprint</a>
         <span class="footer__sep">·</span>
-        <a href="datenschutz.html">Datenschutz</a>
+        <a href="privacy.html">Privacy</a>
       </p>
     </div>
   </footer>

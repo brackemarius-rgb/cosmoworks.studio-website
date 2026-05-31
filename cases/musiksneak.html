@@ -10,6 +10,9 @@
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#fbfaf6" />
   <link rel="canonical" href="https://cosmoworks.studio/cases/musiksneak.html" />
+  <link rel="alternate" hreflang="de" href="https://cosmoworks.studio/cases/musiksneak.html" />
+  <link rel="alternate" hreflang="en" href="https://cosmoworks.studio/en/cases/musiksneak.html" />
+  <link rel="alternate" hreflang="x-default" href="https://cosmoworks.studio/cases/musiksneak.html" />
   <link rel="icon" type="image/png" href="../favicon.png" />
   <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
 
@@ -118,6 +121,25 @@
       transition: color 0.2s ease;
     }
     .header__nav a:hover { color: var(--c-ink); }
+
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--f-sans);
+      font-weight: 500;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .lang-toggle__link {
+      color: var(--c-ink-50);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .lang-toggle__link:hover { color: var(--c-ink); }
+    .lang-toggle__link.is-current { color: var(--c-ink); font-weight: 700; pointer-events: none; }
+    .lang-toggle__sep { color: var(--c-ink-50); }
 
     main {
       position: relative;
@@ -410,6 +432,11 @@
     <nav class="header__nav">
       <a href="../cases.html">Cases</a>
       <a href="../index.html">← Startseite</a>
+      <div class="lang-toggle">
+        <span class="lang-toggle__link is-current">DE</span>
+        <span class="lang-toggle__sep">·</span>
+        <a href="../en/cases/musiksneak.html" class="lang-toggle__link">EN</a>
+      </div>
     </nav>
   </header>
 
@@ -565,7 +592,7 @@
           Konzipiert haben wir das Format gemeinsam, in einem starken Team auf Seiten
           der Jahrhunderthalle. Dazu gehörten die damalige Geschäftsführerin
           <strong>Uschi Ottersberg</strong>, der Prokurist
-          <strong>Moritz Jeschke</strong> (heute Geschäftsführer der Jahrhunderthalle
+          <strong>Moritz Jaeschke</strong> (heute Geschäftsführer der Jahrhunderthalle
           Frankfurt) und <strong>Ellen Giersberg</strong>. Ohne diesen Zirkel wäre die
           Musiksneak nie in der Form entstanden, in der sie heute läuft.
         </p>
